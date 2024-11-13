@@ -24,16 +24,16 @@ Exemplo, va em Body e selecione raw, e cole isso:
 
 DELETE -> http://localhost:8080/data/user/{id} — Exclui um usuário específico pelo id.
 
-
-       _     _
-      | |   (_)
-  ___ | |__  _ ___  ___ _ ____   ____ _  ___ __ _  ___
- / _ \| '_ \| / __|/ _ \ '__\ \ / / _` |/ __/ _` |/ _ \
-| (_) | |_) | \__ \  __/ |   \ V / (_| | (_| (_| | (_) |
-\___/|_.__/| |___/\___|_|    \_/ \__,_|\___\__,_|\___/
-           _/ |
-          |__/
-
+>
+>       _     _
+>      | |   (_)
+>  ___ | |__  _ ___  ___ _ ____   ____ _  ___ __ _  ___
+> / _ \| '_ \| / __|/ _ \ '__\ \ / / _` |/ __/ _` |/ _ \
+>| (_) | |_) | \__ \  __/ |   \ V / (_| | (_| (_| | (_) |
+>\___/|_.__/| |___/\___|_|    \_/ \__,_|\___\__,_|\___/
+>           _/ |
+>          |__/
+>
 #OBSERVAÇÃO: CRIE UM BANCO DE DADOS CHAMADO: usuarios e depois Crie a tabela: users, veja os codigos SQLs a seguir:
 
 CREATE DATABASE usuarios;
