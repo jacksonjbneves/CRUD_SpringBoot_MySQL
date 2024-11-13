@@ -1,41 +1,47 @@
 siga estas instruções para criar o banco de dados e a tabela e usar os END-POINTS:
 
-User o Postman, baixe por este link: https://www.postman.com/downloads/
+User o Postman [![My Skills](https://skillicons.dev/icons?i=postman)](https://skillicons.dev), baixe por este link: https://www.postman.com/downloads/
 
 POST -> http://localhost:8080/data/user — Cria um novo usuário.
 Exemplo, va em Body e selecione raw, e cole isso:
+```json
 {
     "name": "Jackson Neves",
     "email": "jackson.neves@example.com",
     "password": "senha123",
     "profile_image": null
 }
+```
 
 GET -> http://localhost:8080/data/users — Lista todos os usuários.
 GET -> http://localhost:8080/data/user/{id} — Busca um usuário específico pelo id.
 PUT -> http://localhost:8080/data/user/{id} — Atualiza um usuário específico pelo id.
 Exemplo, va em Body e selecione raw, e cole isso:
+```json
 {
     "name": "Jackson Java das Neves",
     "email": "jackson.neves@example.com",
     "password": "senha123",
     "profile_image": null
 }
+```
 
 DELETE -> http://localhost:8080/data/user/{id} — Exclui um usuário específico pelo id.
 
->
->       _     _
->      | |   (_)
->  ___ | |__  _ ___  ___ _ ____   ____ _  ___ __ _  ___
-> / _ \| '_ \| / __|/ _ \ '__\ \ / / _` |/ __/ _` |/ _ \
->| (_) | |_) | \__ \  __/ |   \ V / (_| | (_| (_| | (_) |
->\___/|_.__/| |___/\___|_|    \_/ \__,_|\___\__,_|\___/
->           _/ |
->          |__/
->
+```sql
+       _     _
+      | |   (_)
+  ___ | |__  _ ___  ___ _ ____   ____ _  ___ __ _  ___
+ / _ \| '_ \| / __|/ _ \ '__\ \ / / _` |/ __/ _` |/ _ \
+| (_) | |_) | \__ \  __/ |   \ V / (_| | (_| (_| | (_) |
+\___/|_.__/| |___/\___|_|    \_/ \__,_|\___\__,_|\___/
+           _/ |
+          |__/
+```
+
 #OBSERVAÇÃO: CRIE UM BANCO DE DADOS CHAMADO: usuarios e depois Crie a tabela: users, veja os codigos SQLs a seguir:
 
+```sql
 CREATE DATABASE usuarios;
 
 CREATE TABLE users (
@@ -46,7 +52,9 @@ CREATE TABLE users (
     profile_image MEDIUMBLOB,
     PRIMARY KEY(id)
 );
+```
 
+```sql
 -- DADOS DE 20 USUARIOS FICTICIOS
 INSERT INTO users (id, name, email, password, profile_image) VALUES
 ('550e8400-e29b-41d4-a716-446655440000', 'Alice Silva', 'alice.silva@example.com', 'senha123', NULL),
@@ -69,3 +77,4 @@ INSERT INTO users (id, name, email, password, profile_image) VALUES
 ('550e8400-e29b-41d4-a716-446655440017', 'Tiago Araujo', 'tiago.araujo@example.com', 'senha123', NULL),
 ('550e8400-e29b-41d4-a716-446655440018', 'Ursula Farias', 'ursula.farias@example.com', 'senha123', NULL),
 ('550e8400-e29b-41d4-a716-446655440019', 'Vitor Camargo', 'vitor.camargo@example.com', 'senha123', NULL);
+```
